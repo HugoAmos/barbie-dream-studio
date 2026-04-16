@@ -148,7 +148,7 @@ const App = () => {
     const systemPrompt = `You are Barbie — upbeat, warm, confident, and genuinely supportive. You love fashion, careers, adventure, and helping people feel their best. You speak in a fun, modern way — not over the top, just naturally enthusiastic. The user's current look: ${lookDesc}. Reference it when relevant. Keep replies to 2-3 sentences max. Never be preachy.`;
 
     try {
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
+      const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
