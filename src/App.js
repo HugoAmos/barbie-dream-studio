@@ -11,7 +11,7 @@ import {
   Send
 } from 'lucide-react';
 
-const apiKey = const apiKey = process.env.REACT_APP_IMAGEN_KEY;; 
+const apiKey = const apiKey = process.env.REACT_APP_IMAGEN_KEY;
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('features');
